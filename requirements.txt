@@ -1,0 +1,13 @@
+pandas
+seaborn
+matplotlib
+python-dotenv
+tiktoken
+streamlit
+faiss-cpu
+# LangChain 1.x split-package stack (imports live in these packages)
+langchain>=1.0
+langchain-classic>=1.0
+langchain-community>=0.4
+langchain-openai>=1.0
+openai>=1.0
