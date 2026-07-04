@@ -1,6 +1,22 @@
 # E-commerce Product Recommendation System with Gen AI
 
-This project is an end-to-end e-commerce product recommendation system that utilizes the power of natural language processing (NLP), RAG Techniques, and machine learning to provide personalized product recommendations. Unlike traditional recommendation systems that are not limited to the dataset predefined categories and brands, users can input their own preferences such as product department, category, brand, and maximum price range, and the system generates personalized product recommendations based on their preferences.
+This project is an end to end e commerce product recommendation system that utilizes the power of natural language processing (NLP), RAG Techniques, and machine learning to provide personalized product recommendations. Unlike traditional recommendation systems that are not limited to the dataset predefined categories and brands, users can input their own preferences such as product department, category, brand, and maximum price range, and the system generates personalized product recommendations based on their preferences.
+
+## 🖥️ Live Demo — ShopSense
+
+A **React (Next.js) + FastAPI** web app renders the **real product catalog** and lets users search by plain language. Semantic search understands *intent*, not just keywords.
+
+**Homepage — browse the catalog with live filters**
+
+![ShopSense homepage with product grid and filters](public/01-home-semantic-search.png)
+
+**Semantic search:** *"comfortable running shoes for men"* → returns actual running shoes
+
+![Semantic search results for running shoes](public/02-semantic-search-running-shoes.png)
+
+**Semantic search:** *"cotton kurta for summer for men"* → understands the request
+
+![Semantic search results for cotton kurta](public/03-semantic-search-cotton-kurta.png)
 
 ## Features
 
@@ -14,23 +30,28 @@ This project is an end-to-end e-commerce product recommendation system that util
 ## Installation
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/your-username/ecommerce-product-recommendation.git
 ```
 
 Navigate to the project directory:
+
 ```bash
 cd ecommerce-product-recommendation
 ```
 
 Install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 Set up the OpenAI API key:
+
 - Create a .env file in the project root directory.
 - Add your OpenAI API key to the .env file in the following format:
+
 ```
 OPENAI_API_KEY=your-api-key
 ```
@@ -40,9 +61,11 @@ OPENAI_API_KEY=your-api-key
 - Prepare your e-commerce dataset in CSV format and place it in the project directory.
 - Update the `dataset_path` variable in the `app.py` file with the path to your dataset file.
 - Run the Streamlit app:
+
 ```bash
 streamlit run app.py
 ```
+
 - Access the application through the provided URL in your web browser.
 - Explore the data analysis visualizations and interact with the product recommendation system by providing your preferences.
 
@@ -69,6 +92,7 @@ ecommerce-product-recommendation/
 ├── .env
 └── README.md
 ```
+
 - `app.py`: The main Streamlit application file that handles the user interface and integrates different components of the system.
 - `data_processing.py`: Contains functions for data preprocessing, cleaning, and analysis.
 - `recommendation_utils.py`: Implements the product recommendation system using NLP and machine learning techniques.
@@ -79,6 +103,7 @@ ecommerce-product-recommendation/
 ## Dependencies
 
 The project relies on the following major dependencies:
+
 - **Streamlit**: For building the interactive user interface.
 - **Pandas**: For data manipulation and analysis.
 - **Seaborn and Matplotlib**: For data visualization.
@@ -94,11 +119,3 @@ For a complete list of dependencies, please refer to the `requirements.txt` file
 - Integrate with a real-time e-commerce platform for seamless product recommendations.
 - Optimize the system for scalability and performance to handle large-scale datasets.
 - Explore advanced NLP techniques and deep learning models for enhanced recommendation accuracy.
-
-## Contributing
-
-Contributions to the project are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. Make sure to follow the project's code of conduct.
-
-## License
-
-This project is licensed under the MIT License.
